@@ -41,7 +41,7 @@ async def on_ready():
 @CryptoDisplay.event
 async def on_guild_join(server):
     print(f"{g}[{server.name}] Bot aggiunto.{w}")
-    embed=discord.Embed(title="Grazie per avermi aggiunto in questo server!", description=f"Source code: https://github.com/itsmat", color=0x4bee13)
+    embed=discord.Embed(title="Grazie per avermi aggiunto in questo server!", description=f"Source code: https://github.com/itsmat/CryptoDisplayBot", color=0x4bee13)
     await server.text_channels[0].send(embed=embed)
     try:
         perms = {
